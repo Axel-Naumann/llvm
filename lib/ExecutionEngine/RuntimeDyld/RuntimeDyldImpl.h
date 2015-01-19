@@ -184,6 +184,9 @@ protected:
   typedef StringMap<SymbolLoc> SymbolTableMap;
   SymbolTableMap GlobalSymbolTable;
 
+  // Like the global symbol table but for weak symbols
+  SymbolTableMap WeakSymbolTable;
+
   // Pair representing the size and alignment requirement for a common symbol.
   typedef std::pair<unsigned, unsigned> CommonSymbolInfo;
   // Keep a map of common symbols to their info pairs
